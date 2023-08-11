@@ -1,0 +1,14 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "MY_PROJECT Docs",
+  "entryPoints": ["./src"],
+  "sort": ["source-order"],
+  "categorizeByGroup": false,
+  "searchGroupBoosts": {
+    "Functions": 1.5
+  },
+  "navigationLinks": {
+    "Docs": "https://foxxmd.github.io/MY_PROJECT",
+    "GitHub": "https://github.com/foxxmd/MY_PROJECT"
+  }
+}

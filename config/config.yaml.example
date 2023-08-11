@@ -1,0 +1,6 @@
+#
+# optional
+#
+logging:
+  level: 'debug'
+  file: 'warn'
