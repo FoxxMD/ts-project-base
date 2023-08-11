@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import {AppLogger, getLogger} from "./common/logging.js";
 import {dataDir} from "./common/index.js";
 import {parseConfigFromSources} from "./common/config/ConfigBuilder.js";
+import {initDB} from "./common/db/index.js";
 
 dayjs.extend(utc)
 dayjs.extend(isBetween);
@@ -25,6 +26,8 @@ logger.debug(`Data Dir ENV: ${process.env.DATA_DIR} -> Resolved: ${dataDir}`);
         const {
             logging = {},
         } = config;
+
+        const db = await initDB(config);
 
         logger = getLogger(logging);
 

@@ -29,6 +29,13 @@ Clone this repository to have a batteries-included, **commonjs-based** typescrip
     * ErrorsWithCause log cause chain with prefix `Caused by => ...`
 * Meta (second arg) passed to logging methods is printed as JSON at end of the message
 
+## Database
+
+* Uses [Sequelize](https://sequelize.org/) and defaults to sqlite file in data folder
+  * Logging tied into winston
+* [umzug](https://github.com/sequelize/umzug) configured for migrations
+* Sample `User` model and migration included
+
 ## Docker
 
 * Base uses [Linuxserver.io](https://www.linuxserver.io/) alpine 3.17 [base image](https://github.com/linuxserver/docker-baseimage-alpine)
